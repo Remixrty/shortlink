@@ -1,0 +1,100 @@
+.header {
+    width: 100%;
+    height: 160px;
+    top: 0;
+    left: 0;
+    padding: 43px 64px;
+    /* position: absolute; */
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+
+.logo {
+    cursor: pointer;
+    padding: 7px 67px;
+    width: 380px;
+    height: 74px;
+    background: #3377DD;
+    border-radius: 10px;
+    /* align-self: center; */
+}
+
+.logo:hover {
+    transition: 0.2s linear;
+    background: #2d68c0;
+}
+
+.logo__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.84px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.header__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout-button {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+}
+
+.buttons {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.buttons__signin {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin-right: 40px;
+}
+
+.buttons__signup {
+    cursor: pointer;
+    width: 160px;
+    height: 57px;
+    background: #3377DD;
+    border-radius: 10px;
+    padding: 9px 15px;
+}
+
+.buttons__signup:hover {
+    transition: 0.2s linear;
+    background: #2d68c0;
+    color: #FFFFFF;
+}
+
+.buttons__signin_text-white {
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.buttons__signin:hover {
+    color: #2d68c0;
+}
+
+.buttons__signin_text-white:hover {
+    color: #FFFFFF;
+}

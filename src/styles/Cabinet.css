@@ -1,0 +1,7 @@
+.change-link {
+    width: 100%;
+}
+
+.change-link__row {
+    display: flex;
+}
