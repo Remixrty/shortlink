@@ -7,6 +7,7 @@ import '../styles/Cabinet.css'
 import { orderCounter, orderShort, orderTarget } from '../store/slices/sortSlice'
 import { decreaseOffset, increaseOffset } from '../store/slices/offsetSlice'
 
+
 export default function Cabinet() {
     const { isAuth, token } = useSelector(state => state.user)
     const { order } = useSelector(state => state.sort)
@@ -77,6 +78,12 @@ export default function Cabinet() {
         else dispatch(decreaseOffset())
     }
 
+    function copyToClipboard(text) {
+        document.getElementById('shortLink-field-label').innerHTML = 'Short link'
+        navigator.clipboard.writeText(text)
+        document.getElementById('shortLink-field-label').innerHTML += ' COPIED'
+    }
+
     return isAuth ? (
         <div className='container'>
             <div className='row'>
@@ -91,8 +98,10 @@ export default function Cabinet() {
                         </div>
                         <div className='button' onClick={() => getShortLink()}>Short link</div>
                         <div className='superfield '>
-                            <input id='shortLink-field' type='text' className='input-field' value={`http://79.143.31.216/s/${shortLink}`} minLength='4' placeholder=' ' readOnly={true} />
-                            <label htmlFor='shortLink-field' className='input-field__label'>Short link</label>
+
+                            <input id='shortLink-field' type='text' className='input-field' value={`http://79.143.31.216/s/${shortLink}`} minLength='4' placeholder=' ' readOnly={true} onClick={e => copyToClipboard(e.target.value)} />
+
+                            <label htmlFor='shortLink-field' id='shortLink-field-label' className='input-field__label'>Short link</label>
                         </div>
                     </div>
 
