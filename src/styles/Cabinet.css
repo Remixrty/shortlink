@@ -4,4 +4,78 @@
 
 .change-link__row {
     display: flex;
+    justify-content: space-between;
+}
+
+.table-card {
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 32px 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-card__table th {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    cursor: pointer;
+
+    color: #000000;
+}
+
+.table-card__table tbody {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+
+.table-card__table {
+    width: 100%;
+}
+
+.pagination {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pagination__button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    width: 119px;
+    height: 44px;
+    background: #9BB3D7;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.pagination__button:hover {
+    transition: 0.2s linear;
+    background: #84a3d2;
+}
+
+.pagination__button_inactive {
+    cursor: not-allowed;
 }

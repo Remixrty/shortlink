@@ -27,8 +27,6 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' exact element={<Mainpage />} />
-        <Route path='/login' element={<SignIn />} />
-        <Route path='/registration' element={<SignUp />} />
         <Route path='/profile' element={<Cabinet />} />
       </Routes>
     </>
