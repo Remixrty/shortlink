@@ -54,7 +54,7 @@ export default function LoginForm({ page }) {
                 }).catch(error => {
                     console.log(error)
                     console.log(error.response.data.detail);
-                    document.getElementById('error-message-signup').innerHTML = error?.response?.data?.detail
+                    document.getElementById('error-message-signin').innerHTML = error?.response?.data?.detail
                 })
     }
 
@@ -75,7 +75,7 @@ export default function LoginForm({ page }) {
                 <label htmlFor='password-field' className='input-field__label'>Password</label>
             </div>
             <div className='button button_inactive' id='submit-button' onClick={() => fetchData()}>Sign In</div>
-            <p className='error-message' id='error-message-signup'>
+            <p className='error-message' id='error-message-signin'>
 
             </p>
             <div className='text-button'>
